@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/profile/static/css/main.c671291e.css",
+    "main.js": "/profile/static/js/main.1ae2f385.js",
+    "static/media/pocketplanner.png": "/profile/static/media/pocketplanner.165ec91037d473075349.png",
+    "static/media/profilephoto.jpg": "/profile/static/media/profilephoto.4703f51bdb1b3e1d06ca.jpg",
+    "index.html": "/profile/index.html",
+    "main.c671291e.css.map": "/profile/static/css/main.c671291e.css.map",
+    "main.1ae2f385.js.map": "/profile/static/js/main.1ae2f385.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c671291e.css",
+    "static/js/main.1ae2f385.js"
+  ]
+}
