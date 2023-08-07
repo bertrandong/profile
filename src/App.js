@@ -13,17 +13,24 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl dark:text-white">Bertrand</h1>
-            <ul className="flex items-center">
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/></li>
-              <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='#'>Resume</a></li>
-            </ul>
-          </nav>
+    <div className={darkMode ? 'dark' : '' }>
+      <main className="bg-white dark:bg-gray-900">
+        <nav className="py-10 mb-12 flex justify-between md:px-20 lg:px-40 bg-sky-50 dark:bg-blue-950">
+          <h1 className="text-xl dark:text-white">Bertrand</h1>
+          <ul className="space-x-5">
+            <li className="inline-block text-xl hover:underline dark:text-white"><a href="#home">Home</a></li>
+            <li className="inline-block text-xl hover:underline dark:text-white"><a href="#about">About</a></li>
+            <li className="inline-block text-xl hover:underline dark:text-white"><a href="#experience">Experience</a></li>
+            <li className="inline-block text-xl hover:underline dark:text-white"><a href="#portfolio">Portfolio</a></li>
+            <li className="inline-block text-xl hover:underline dark:text-white"><a href="#contact">Contact</a></li>
+          </ul>
+          <ul className="flex items-center">
+            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/></li>
+            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href={require('./images/Ong Chang Heng Bertrand_CV.pdf')} target="_blank">Resume</a></li>
+          </ul>
+        </nav>
 
+        <section className="min-h-screen px-10" id="home">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-white">Bertrand Ong</h2>
             <h3 className="text-2xl py-2 dark:text-white">Computer Science Undergraduate</h3>
@@ -34,7 +41,7 @@ function App() {
                   .typeString(' Software Engineering.')
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString('Blockchain Techonology.')
+                  .typeString('Blockchain Technology.')
                   .pauseFor(1000)
                   .deleteAll()
                   .typeString('Artificial Intelligence.')
@@ -60,7 +67,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="px-10" id="about">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Get to Know</h3>
             <h3 className="text-3xl dark:text-white">About Me</h3>
@@ -82,7 +89,7 @@ function App() {
               </div>
               <h3 className="py-1 font-medium dark:text-white">Education</h3>
               <p className="text-gray-800 py-1 dark:text-gray-300">National University of Singapore</p>
-              <p className="text-gray-800 py-1 dark:text-gray-300">Bachelor of Computing (BsC) in Computer Science</p>
+              <p className="text-gray-800 py-1 dark:text-gray-300">Bachelor of Computing (BComp) in Computer Science</p>
             </div>
           
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
@@ -103,7 +110,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="px-10" id="experience">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Skills Acquired</h3>
             <h3 className="text-3xl dark:text-white">Experience</h3>
@@ -214,7 +221,7 @@ function App() {
           </div>
         </section>
 
-        <section>
+        <section className="px-10" id="portfolio">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">What I've Done</h3>
             <h3 className="text-3xl dark:text-white">My Porfolio</h3>
@@ -229,7 +236,7 @@ function App() {
           </div>
         </section>
 
-        <section className="pt-10 pb-1">
+        <section className="pt-10 pb-1 px-10" id="contact">
           <div>
             <h3 className="text-gray-600 dark:text-gray-300">Get In Touch</h3>
             <h3 className="text-3xl dark:text-white">Contact</h3>
@@ -271,7 +278,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="text-center py-10 bg-teal-700 text-white dark:bg-gray-900">
+      <footer className="text-center py-10 bg-sky-50 text-black dark:bg-blue-950 dark:text-white">
         <h1 className="font-bold text-2xl">BERTRAND</h1>
         <p>&copy; Bertrand Ong. All rights reserved, 2023.</p>
       </footer>
