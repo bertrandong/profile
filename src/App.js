@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
-import scrollAnimation from "./assets/Animation - 1701850459556.json"
-import mascotAnimation from "./assets/mascotAnimation.json"
-import skillsAnimation from "./assets/skillsAnimation.json"
-import contactAnimation from "./assets/contactAnimation.json"
+import scrollAnimation from "./assets/Animation - 1701850459556.json";
+import mascotAnimation from "./assets/mascotAnimation.json";
+import skillsAnimation from "./assets/skillsAnimation.json";
+import contactAnimation from "./assets/contactAnimation.json";
+import upAnimation from "./assets/upAnimation.json";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiFillGithub, AiFillFire } from "react-icons/ai";
 import { FaGraduationCap, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaPython, FaJava, FaTelegram, FaWhatsapp, FaDiscord } from "react-icons/fa6";
@@ -74,7 +75,7 @@ function App() {
 
 
 
-        <section className="px-10" id="about">
+        <section className="px-24" id="about">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Get to Know</h3>
             <h3 className="text-3xl dark:text-white">About Me</h3>
@@ -87,7 +88,7 @@ function App() {
               <p className="text-md py-3 leading-8 text-gray-800 dark:text-gray-300">I am deeply passionate about fields like Software Engineering, Artificial Intelligence and Web Development, and hope to be able to turn this interest into solutions for people in the future.</p>
               <p className="text-md py-3 leading-8 text-gray-800 dark:text-gray-300">Outside of work, I enjoy playing a fun session of Squash with my friends. I am always interested in picking up new hobbies, such as photography and baking.</p>
             </div>
-            <div>
+            <div class>
               <img src={require('./images/aboutphoto.jpg')} className="w-special h-auto rounded-2xl" />
             </div>
 
@@ -121,7 +122,7 @@ function App() {
           </div>
         </section>
 
-        <section className="px-10" id="experience">
+        <section className="px-24" id="experience">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Skills Acquired</h3>
             <h3 className="text-3xl dark:text-white">Experience</h3>
@@ -157,7 +158,7 @@ function App() {
               </div>
             </div>
             <div className="w-1/2">
-              <Lottie animationData={skillsAnimation} className="w-2/3 mx-auto dark:text-white" />
+              <Lottie animationData={skillsAnimation} className="w-5/6 mx-auto dark:text-white" />
             </div>
           </div>
 
@@ -275,7 +276,7 @@ function App() {
           </div>
         </section>
 
-        <section className="px-10" id="portfolio">
+        <section className="px-24" id="portfolio">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">What I've Done</h3>
             <h3 className="text-3xl dark:text-white">My Porfolio</h3>
@@ -285,12 +286,13 @@ function App() {
             <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://pocketplanner.vercel.app/', '_blank')}>
             <img src={require('./images/pocketplanner.png')} className="rounded-xl" />
             <h4 className="text-xl mt-5 font-semibold dark:text-white">PocketPlanner</h4>
-            <p className="text-gray-600 dark:text-gray-300">A web app focused to help people organise their day better</p>
+            <p className="text-gray-600 dark:text-gray-300">A web app focused to help people better organise their day</p>
+            <p className="text-gray-600 dark:text-gray-300">Built with MongoDB, ExpressJS, ReactJS and NodeJS</p>
             </div>
           </div>
         </section>
 
-        <section className="pt-10 pb-1 px-10" id="contact">
+        <section className="pt-10 pb-1 px-24" id="contact">
           <div>
             <h3 className="text-gray-600 dark:text-gray-300">Get In Touch</h3>
             <h3 className="text-3xl dark:text-white">Contact</h3>
@@ -301,7 +303,9 @@ function App() {
               <p className="pb-5 dark:text-gray-300">I'm always open to talk about any enquiries or simply just chat about my past experiences and projects. Feel free to reach out to me on any of my social media platforms!</p>
               <ContactForm />
             </div>
-            <Lottie animationData={contactAnimation} className="w-1/3 mx-auto" />
+            <div className="w-1/2">
+              <Lottie animationData={contactAnimation} className="w-5/6 mx-auto" />
+            </div>
           </div>
 
           <div className="lg:flex gap-5  dark:text-white">
@@ -338,10 +342,11 @@ function App() {
             </div>
           </div>
         </section>
+        <a href="#"><Lottie animationData={upAnimation} className="w-12 mx-auto pb-4" /></a>
         <Lottie animationData={mascotAnimation} className="w-48 mx-auto dark:text-white" />
       </main>
 
-      <footer className="text-center py-10 bg-indigo-100 text-black dark:bg-blue-950 dark:text-white">
+      <footer className="text-center py-10 bg-indigo-100 text-black dark:bg-gray-700 dark:text-white">
         <h1 className="font-bold text-2xl">BERTRAND</h1>
         <p>&copy; Bertrand Ong. All rights reserved, 2023.</p>
       </footer>
