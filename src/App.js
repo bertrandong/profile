@@ -282,13 +282,23 @@ function App() {
             <h3 className="text-3xl dark:text-white">My Porfolio</h3>
           </div>
 
+          <div className="flex gap-x-8">
+          <div className="lg:flex gap-10 w-1/3">
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://bertrandong.wixsite.com/bertrand', '_blank')}>
+              <img src={require('./images/codersdigest.png')} className="rounded-xl h-44 mx-auto" />
+              <h4 className="text-xl mt-5 font-semibold dark:text-white">Coder's Digest</h4>
+              <p className="text-gray-600 dark:text-gray-300">A blog to share my experiences, reflections and what I've learned</p>
+              <p className="text-gray-600 dark:text-gray-300">Built with Wix</p>
+            </div>
+          </div>
           <div className="lg:flex gap-10 w-1/3">
             <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://pocketplanner.vercel.app/', '_blank')}>
-            <img src={require('./images/pocketplanner.png')} className="rounded-xl" />
-            <h4 className="text-xl mt-5 font-semibold dark:text-white">PocketPlanner</h4>
-            <p className="text-gray-600 dark:text-gray-300">A web app focused to help people better organise their day</p>
-            <p className="text-gray-600 dark:text-gray-300">Built with MongoDB, ExpressJS, ReactJS and NodeJS</p>
+              <img src={require('./images/pocketplanner.png')} className="rounded-xl h-44 mx-auto" />
+              <h4 className="text-xl mt-5 font-semibold dark:text-white">PocketPlanner</h4>
+              <p className="text-gray-600 dark:text-gray-300">A web app focused to help people better organise their day</p>
+              <p className="text-gray-600 dark:text-gray-300">Built with MongoDB, ExpressJS, ReactJS and NodeJS</p>
             </div>
+          </div>
           </div>
         </section>
 
