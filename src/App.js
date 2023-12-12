@@ -284,7 +284,7 @@ function App() {
 
           <div className="flex gap-x-8">
           <div className="lg:flex gap-10 w-1/3">
-            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://bertrandong.wixsite.com/bertrand', '_blank')}>
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://bertrandong.wixsite.com/codersdigest', '_blank')}>
               <img src={require('./images/codersdigest.png')} className="rounded-xl h-44 mx-auto" />
               <h4 className="text-xl mt-5 font-semibold dark:text-white">Coder's Digest</h4>
               <p className="text-gray-600 dark:text-gray-300">A blog to share my experiences, reflections and what I've learned</p>
