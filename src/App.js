@@ -299,6 +299,14 @@ function App() {
               <p className="text-gray-600 dark:text-gray-300">Built with MongoDB, ExpressJS, ReactJS and NodeJS</p>
             </div>
           </div>
+          <div className="lg:flex gap-10 w-1/3">
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://h4g.vercel.app/', '_blank')}>
+              <img src={require('./images/h4g.png')} className="rounded-xl h-44 mx-auto" />
+              <h4 className="text-xl mt-5 font-semibold dark:text-white">Hack4Good Hackathon</h4>
+              <p className="text-gray-600 dark:text-gray-300">A fullstack web application to help the beneficiary track event participants and their attendance</p>
+              <p className="text-gray-600 dark:text-gray-300">Built with MongoDB, ExpressJS, ReactJS and NodeJS</p>
+            </div>
+          </div>
           </div>
         </section>
 
