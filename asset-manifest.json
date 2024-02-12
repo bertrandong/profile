@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.7e2206a4.css",
-    "main.js": "/profile/static/js/main.ab7dfe8f.js",
+    "main.js": "/profile/static/js/main.247777e6.js",
     "static/media/aboutphoto.jpg": "/profile/static/media/aboutphoto.1efc91fbec5f8bc7497b.jpg",
     "static/media/pocketplanner.png": "/profile/static/media/pocketplanner.165ec91037d473075349.png",
+    "static/media/h4g.png": "/profile/static/media/h4g.8b52c708103d315eb26c.png",
     "static/media/codersdigest.png": "/profile/static/media/codersdigest.3aa111dc5ab144ebaf01.png",
     "static/media/Ong Chang Heng Bertrand_CV.pdf": "/profile/static/media/Ong Chang Heng Bertrand_CV.3bac1610a7fa03468420.pdf",
     "static/media/profilephoto.jpg": "/profile/static/media/profilephoto.4703f51bdb1b3e1d06ca.jpg",
@@ -21,10 +22,10 @@
     "static/media/js.png": "/profile/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/profile/index.html",
     "main.7e2206a4.css.map": "/profile/static/css/main.7e2206a4.css.map",
-    "main.ab7dfe8f.js.map": "/profile/static/js/main.ab7dfe8f.js.map"
+    "main.247777e6.js.map": "/profile/static/js/main.247777e6.js.map"
   },
   "entrypoints": [
     "static/css/main.7e2206a4.css",
-    "static/js/main.ab7dfe8f.js"
+    "static/js/main.247777e6.js"
   ]
 }
