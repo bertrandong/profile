@@ -26,7 +26,7 @@ function App() {
     <div className={darkMode ? 'dark' : '' }>
       <main className="px-8 bg-slate-100 dark:bg-gray-900">
         <header className="sticky top-0 z-50 bg-slate-100 dark:bg-gray-900">
-        <nav className="container z-auto py-10 mb-8 flex justify-between px-20 items-center">
+        <nav className="z-auto py-10 mb-8 flex justify-between px-20 items-center">
           <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#home">BERTRAND</a></h1>
@@ -164,7 +164,7 @@ function App() {
               <div>
                 <img src={require('./images/tailwind-css.png')} className="py-3 w-24 h-24 hover:scale-105 inline-block" />
                 <img src={require('./images/reactjs.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block" />
-                <img src={require('./images/mongodb.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block" />
+                <img src={require('./images/mongodb.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block mr-2" />
                 <img src={require('./images/nodejs.png')} className="py-3 w-64 h-24 hover:scale-105 inline-block" />
                 <img src={require('./images/expressjs.png')} className="py-3 w-32 h-24 hover:scale-105 inline-block" />
                 <img src={require('./images/postgresql.png')} className="py-3 w-20 h-28 hover:scale-105 inline-block" />
@@ -172,7 +172,7 @@ function App() {
               <h3 className="py-3 font-silkscreen text-xl dark:text-gray-300">Integrated Development Environments</h3>
               <div>
                 <img src={require('./images/vscode.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block" />
-                <img src={require('./images/intellij.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block" />
+                <img src={require('./images/intellij.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block mr-1" />
                 <img src={require('./images/vim.png')} className="py-3 w-20 h-24 hover:scale-105 inline-block" />
               </div>
             </div>
