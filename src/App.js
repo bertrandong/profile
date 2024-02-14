@@ -26,7 +26,7 @@ function App() {
     <div className={darkMode ? 'dark' : '' }>
       <main className="px-8 bg-slate-100 dark:bg-gray-900">
         <header className="sticky top-0 z-50 bg-slate-100 dark:bg-gray-900">
-        <nav className="z-auto py-10 mb-8 flex justify-between px-20 items-center">
+        <nav className="py-4 mb-8 flex justify-between px-20 items-center">
           <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#home">BERTRAND</a></h1>
