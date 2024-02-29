@@ -9,10 +9,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiFillGithub, AiFillFire, AiOutlineClose } from "react-icons/ai";
 import { FaGraduationCap, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaPython, FaJava, FaTelegram, FaWhatsapp, FaDiscord } from "react-icons/fa6";
 import { MdVolunteerActivism } from "react-icons/md"
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { SiExpress, SiJavascript, SiMongodb } from "react-icons/si"
 import { IoIosMail } from "react-icons/io"
-import { BiLogoPostgresql } from "react-icons/bi";
 import Typewriter from "typewriter-effect";
 import { ContactForm } from "./ContactForm";
 import { FaBars } from "react-icons/fa";
@@ -27,32 +24,32 @@ function App() {
       <main className="px-8 bg-slate-100 dark:bg-gray-900">
         <header className="sticky top-0 z-50 bg-slate-100 dark:bg-gray-900">
         <nav className="py-4 mb-8 flex justify-between px-20 items-center">
-          <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#home">BERTRAND</a></h1>
-          <button
-              className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none dark:text-white"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <FaBars />
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center justify-center" +
-              (navbarOpen ? "flex" : " hidden")
-            }
-          >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto lg:space-x-5 text-center items-center">
-            <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#about">About</a></li>
-            <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#experience">Experience</a></li>
-            <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#portfolio">Portfolio</a></li>
-            <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#contact">Contact</a></li>
-            <li className="my-1"><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/></li>
-            <li className="my-3"><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md" href={require('./images/Ong Chang Heng Bertrand_CV.pdf')} target="_blank">Resume</a></li>
-          </ul>
-          </div>
+          <div className="container mx-auto flex flex-wrap items-center justify-between">
+            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+              <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#home">BERTRAND</a></h1>
+              <button
+                  className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none dark:text-white"
+                  type="button"
+                  onClick={() => setNavbarOpen(!navbarOpen)}
+                >
+                  <FaBars />
+                </button>
+              </div>
+              <div
+                className={
+                  "lg:flex flex-grow items-center justify-center" +
+                  (navbarOpen ? "flex" : " hidden")
+                }
+              >
+              <ul className="flex flex-col lg:flex-row list-none lg:ml-auto lg:space-x-5 text-center items-center">
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#about">About</a></li>
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#experience">Experience</a></li>
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#portfolio">Portfolio</a></li>
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#contact">Contact</a></li>
+                <li className="my-1"><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/></li>
+                <li className="my-3"><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md" href={require('./images/Ong Chang Heng Bertrand_CV.pdf')} target="_blank">Resume</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
         </header>
