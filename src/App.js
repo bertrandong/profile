@@ -57,7 +57,7 @@ function App() {
         </nav>
         </header>
 
-        <section className="min-h-screen px-10" id="home">
+        <section className="min-h-screen" id="home">
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-white">Bertrand Ong</h2>
             <h3 className="text-2xl py-2 dark:text-white">Computer Science Undergraduate</h3>
@@ -89,7 +89,7 @@ function App() {
             <AiFillFacebook onClick={() => window.open('https://www.facebook.com/bertrand.ong.75/', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
           </div>
 
-          <div className="w-80 h-80 mt-12 mb-6 relative mx-auto">
+          <div className="w-80 h-80 mt-12 mb-6 mx-auto justify-center">
             <img src={require('./images/profilephoto.jpg')} className="rounded-full" />
           </div>
           <a href="#about"><Lottie animationData={scrollAnimation} className="w-24 mx-auto" /></a>
@@ -97,7 +97,7 @@ function App() {
 
 
 
-        <section className="px-24" id="about">
+        <section className="md:px-24" id="about">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Get to Know</h3>
             <h3 className="text-3xl dark:text-white">About Me</h3>
@@ -143,7 +143,7 @@ function App() {
           </div>
         </section>
 
-        <section className="px-24" id="experience">
+        <section className="md:px-24" id="experience">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Skills Acquired</h3>
             <h3 className="text-3xl dark:text-white">Experience</h3>
@@ -180,122 +180,9 @@ function App() {
               <Lottie animationData={skillsAnimation} className="w-5/6 mx-auto dark:text-white" />
             </div>
           </div>
-
-          <div className="lg:flex gap-10">
-            <div className="p-10 rounded-xl my-10 flex-1 bg-indigo-100 dark:bg-gray-700">
-              <h3 className="text-2xl text-center dark:text-white">Frontend</h3>
-              <div className="grid grid-cols-2 gap-5 p-10 dark:text-white">
-                <div className="flex">
-                  <FaHtml5 className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      HTML
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <FaCss3Alt className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      CSS
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <FaReact className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      React
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <BiLogoTailwindCss className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      TailwindCSS
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-10 rounded-xl my-10 flex-1 bg-indigo-100 dark:bg-gray-700">
-              <h3 className="text-2xl text-center dark:text-white">Backend</h3>
-              <div className="grid grid-cols-2 gap-5 p-10 dark:text-white">
-                <div className="flex">
-                  <FaNodeJs className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      NodeJs
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <SiExpress className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      Express
-                    </h4>
-                    <small className="text-gray-60 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <SiMongodb className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      MongoDB
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <SiJavascript className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      Javascript
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <FaJava className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      Java
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Experienced</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <FaPython className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      Python
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Intermediate</small>
-                  </div>
-                </div>
-                <div className="flex">
-                  <BiLogoPostgresql className="text-5xl"/>
-                  <div className="ml-2">
-                    <h4>
-                      PostgreSQL
-                    </h4>
-                    <small className="text-gray-600 dark:text-gray-300">Intermediate</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
-        <section className="px-24" id="portfolio">
+        <section className="md:px-24" id="portfolio">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">What I've Done</h3>
             <h3 className="text-3xl dark:text-white">My Porfolio</h3>
@@ -303,7 +190,7 @@ function App() {
 
           <div className="lg:flex gap-x-8">
           <div className="flex lg:gap-10 lg:w-1/3">
-            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://bertrandong.wixsite.com/codersdigest', '_blank')}>
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 mt-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://bertrandong.wixsite.com/codersdigest', '_blank')}>
               <img src={require('./images/codersdigest.png')} className="rounded-xl h-44 mx-auto" />
               <h4 className="text-xl mt-5 font-semibold dark:text-white">Coder's Digest</h4>
               <p className="text-gray-600 dark:text-gray-300">A blog to share my experiences, reflections and what I've learned</p>
@@ -311,7 +198,7 @@ function App() {
             </div>
           </div>
           <div className="flex lg:gap-10 lg:w-1/3">
-            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://pocketplanner.vercel.app/', '_blank')}>
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 mt-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://pocketplanner.vercel.app/', '_blank')}>
               <img src={require('./images/pocketplanner.png')} className="rounded-xl h-44 mx-auto" />
               <h4 className="text-xl mt-5 font-semibold dark:text-white">PocketPlanner</h4>
               <p className="text-gray-600 dark:text-gray-300">A web app focused to help people better organise their day</p>
@@ -319,7 +206,7 @@ function App() {
             </div>
           </div>
           <div className="flex lg:gap-10 lg:w-1/3">
-            <div className="flex-1 bg-indigo-100 rounded-xl p-10 my-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://h4g.vercel.app/', '_blank')}>
+            <div className="flex-1 bg-indigo-100 rounded-xl p-10 mt-10 hover:bg-indigo-200 duration-500 cursor-pointer dark:bg-gray-700 dark:hover:bg-gray-800" onClick={() => window.open('https://h4g.vercel.app/', '_blank')}>
               <img src={require('./images/h4g.png')} className="rounded-xl h-44 mx-auto" />
               <h4 className="text-xl mt-5 font-semibold dark:text-white">Hack4Good Hackathon 2024</h4>
               <p className="text-gray-600 dark:text-gray-300">A fullstack web application to help the beneficiary (Big At Heart) track event participants and their attendance</p>
@@ -329,7 +216,7 @@ function App() {
           </div>
         </section>
 
-        <section className="pt-10 pb-1 px-24" id="contact">
+        <section className="pt-10 pb-1 md:px-24" id="contact">
           <div>
             <h3 className="text-gray-600 dark:text-gray-300">Get In Touch</h3>
             <h3 className="text-3xl dark:text-white">Contact</h3>
