@@ -6,12 +6,14 @@ import skillsAnimation from "./assets/skillsAnimation.json";
 import contactAnimation from "./assets/contactAnimation.json";
 import upAnimation from "./assets/upAnimation.json";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiFillGithub, AiFillFire, AiOutlineClose } from "react-icons/ai";
-import { FaGraduationCap, FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaPython, FaJava, FaTelegram, FaWhatsapp, FaDiscord } from "react-icons/fa6";
+import { AiFillLinkedin, AiFillInstagram, AiFillFacebook, AiFillGithub, AiFillFire } from "react-icons/ai";
+import { FaGraduationCap, FaTelegram, FaWhatsapp, FaDiscord } from "react-icons/fa6";
+import { SiDevpost } from "react-icons/si";
 import { MdVolunteerActivism } from "react-icons/md"
 import { IoIosMail } from "react-icons/io"
 import Typewriter from "typewriter-effect";
 import { ContactForm } from "./ContactForm";
+import { WorkSection } from "./WorkSection";
 import { FaBars } from "react-icons/fa";
 import "./App.css";
 
@@ -26,7 +28,7 @@ function App() {
         <nav className="py-4 mb-8 flex justify-between items-center">
           <div className="container mx-auto flex flex-wrap items-center justify-between">
             <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#home">BERTRAND</a></h1>
+              <h1 className="text-3xl font-bold font-silkscreen dark:text-white"><a href="#">BERTRAND</a></h1>
               <button
                   className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none dark:text-white"
                   type="button"
@@ -43,8 +45,9 @@ function App() {
               >
               <ul className="flex flex-col lg:flex-row list-none lg:ml-auto lg:space-x-5 text-center items-center">
                 <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#about">About</a></li>
-                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#experience">Experience</a></li>
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#skills">Skills</a></li>
                 <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#portfolio">Portfolio</a></li>
+                <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#experience">Experience</a></li>
                 <li className="hover:text-gray-500 dark:text-white dark:hover:text-gray-300 my-1"><a href="#contact">Contact</a></li>
                 <li className="my-1"><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/></li>
                 <li className="my-3"><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md" href={require('./images/Ong Chang Heng Bertrand_CV.pdf')} target="_blank">Resume</a></li>
@@ -55,7 +58,7 @@ function App() {
         </header>
 
         <section className="min-h-screen" id="home">
-          <div className="text-center p-10">
+          <div className="text-center p-6">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-white">Bertrand Ong</h2>
             <h3 className="text-2xl py-2 dark:text-white">Computer Science Undergraduate</h3>
             <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-300">
@@ -83,7 +86,7 @@ function App() {
             <AiFillLinkedin onClick={() => window.open('https://www.linkedin.com/in/bertrandoch/', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
             <AiFillGithub onClick={() => window.open('https://github.com/bertrandong', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
             <AiFillInstagram onClick={() => window.open('https://instagram.com/bertshitt', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
-            <AiFillFacebook onClick={() => window.open('https://www.facebook.com/bertrand.ong.75/', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
+            <SiDevpost onClick={() => window.open('https://devpost.com/bertrandong', '_blank')} className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-400" />
           </div>
 
           <div className="w-80 h-80 mt-12 mb-6 mx-auto justify-center">
@@ -94,7 +97,7 @@ function App() {
 
 
 
-        <section className="md:px-24" id="about">
+        <section className="md:px-24 pt-11" id="about">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">Get to Know</h3>
             <h3 className="text-3xl dark:text-white">About Me</h3>
@@ -140,10 +143,10 @@ function App() {
           </div>
         </section>
 
-        <section className="md:px-24" id="experience">
+        <section className="md:px-24 pt-11" id="skills">
           <div>
-            <h3 className="text-gray-600 pt-10 dark:text-gray-300">Skills Acquired</h3>
-            <h3 className="text-3xl dark:text-white">Experience</h3>
+            <h3 className="text-gray-600 pt-10 dark:text-gray-300">What I've Acquired</h3>
+            <h3 className="text-3xl dark:text-white">Skills</h3>
           </div>
 
           <div className="lg:flex">
@@ -179,7 +182,7 @@ function App() {
           </div>
         </section>
 
-        <section className="md:px-24" id="portfolio">
+        <section className="md:px-24 pt-11" id="portfolio">
           <div>
             <h3 className="text-gray-600 pt-10 dark:text-gray-300">What I've Done</h3>
             <h3 className="text-3xl dark:text-white">My Porfolio</h3>
@@ -213,7 +216,15 @@ function App() {
           </div>
         </section>
 
-        <section className="pt-10 pb-1 md:px-24" id="contact">
+        <section className="md:px-24 pt-11" id="experience">
+          <div>
+            <h3 className="text-gray-600 pt-10 dark:text-gray-300">Past Internships</h3>
+            <h3 className="text-3xl dark:text-white">Experience</h3>
+          </div>
+          <WorkSection />
+        </section>
+
+        <section className="md:px-24 pt-20" id="contact">
           <div>
             <h3 className="text-gray-600 dark:text-gray-300">Get In Touch</h3>
             <h3 className="text-3xl dark:text-white">Contact</h3>
