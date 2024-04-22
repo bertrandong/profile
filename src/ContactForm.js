@@ -7,7 +7,7 @@ export const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
       
-        emailjs.sendForm('service_8d2wizl', 'template_b6x3ypw', form.current, '3bmVVctHhq1VIzvTb')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_SERVICE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
